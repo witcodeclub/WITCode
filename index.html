@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wit Code Club</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-logo-container" href="#">
+              <img src="./logo.png" alt="Logo" id="logo-nav" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#members">Members</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+      <div class="home-image-container">
+        <img
+          src="./webite1.jpg"
+          alt="Coding Image"
+          class="home-image"
+        />
+        <div class="text-overlay">
+          <h1>Welcome to  WitCode</h1>
+          <p>From Ideas to Impact, Powered by Women.</p>
+          <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2>About Us</h2>
+        <p>
+          <strong>WITCode</strong> was established on <strong>28th October</strong> with the vision of empowering and inspiring women in technology. As a coding club based in a <strong>girls' college</strong>, WITCode is dedicated to fostering a vibrant and inclusive environment where students can learn, collaborate, and grow together in the field of technology.
+        </p>
+        <p>
+          Our mission is to provide a platform for students to explore programming, problem-solving, and innovation, regardless of their prior experience. Through workshops, coding competitions, hackathons, and mentorship programs, WITCode equips its members with the technical and soft skills needed to thrive in the tech industry.
+        </p>
+        <p>
+          At WITCode, we believe in learning by doing. Our members work on real-world projects, contribute to open-source communities, and stay updated with the latest trends in technology. We also collaborate with industry professionals and alumni to bridge the gap between academics and the professional world.
+        </p>
+        <p>
+          Whether you're a coding beginner or a tech enthusiast, WITCode welcomes you to join our community of like-minded individuals who are passionate about technology and its power to make a difference.
+        </p>
+    
+        <!-- Mission and Vision hidden by default -->
+        <div id="mission-vision" style="display: none; opacity: 0; transition: opacity 1s ease-in-out;">
+          <h3>Our Mission</h3>
+          <p>
+            To inspire, educate, and empower women in technology by providing a supportive platform for learning, collaboration, and personal growth. We aim to foster creativity, leadership, and confidence through innovative activities and real-world tech exposure.
+          </p>
+    
+          <h3>Our Vision</h3>
+          <p>
+            To create a future where women lead the way in technology, breaking barriers and redefining the tech landscape. WITCode envisions a world where diversity drives innovation and every woman is equipped to contribute to and shape the digital age.
+          </p>
+        </div>
+    
+        <a href="javascript:void(0);" class="btn btn-success learn-more-btn mt-3" onclick="toggleMissionVision()">Learn More</a>
+      </div>
+    </section>
+
+
+    <!-- Members Section -->
+    <section id="members" class="py-5">
+      <div class="container text-center">
+        <h2>Our Members</h2>
+        <p>
+          Meet our talented and diverse group of coders who contribute to the
+          club's success.
+        </p>
+
+        <!-- Carousel -->
+        <div id="memberCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Carousel item 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="./Rimjhim.jpeg"
+                      class="card-img-top"
+                      alt="Rimjhim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Rimjhim</h5>
+                      <p class="card-text">President</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/Rimee2005"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/rimjhim-jha-b1b86b301/"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="./pushpa.jpg"
+                      class="card-img-top"
+                      alt="Pushpa Rani"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pushpa Rani</h5>
+                      <p class="card-text">Vice President</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/Pushpa0204"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/pushpa-rani-0a6720292/"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="shruti.jpg"
+                      class="card-img-top"
+                      alt="Shruti Riya"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shruti Riya</h5>
+                      <p class="card-text"> secretary</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/RiyaShruti"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/shruti-riya-525149306/"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel item 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="/WhatsApp Image 2024-12-04 at 07.35.36_010dcc6f.jpg"
+                      class="card-img-top"
+                      alt="Rupa Kumari"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Rupa Kumari</h5>
+                      <p class="card-text">Member</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/rupsssss06"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/rupa-kumari-6b21182a6"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="/katyani.jpg"
+                      class="card-img-top"
+                      alt="Katyani Shrivastav"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Katyani Shrivastav</h5>
+                      <p class="card-text">Member</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/KatyayaniSrivastav"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://www.linkedin.com/in/katyayani-5581b32a7
+                          ?utm_source=share&utm_campaign=share_via&utm_
+                          content=profile&utm_medium=android_app "
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel item 3 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Alice Brown"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Alice Brown</h5>
+                      <p class="card-text">Frontend Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel item 4 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Alice Brown"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Alice Brown</h5>
+                      <p class="card-text">Frontend Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel item 4 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Alice Brown"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Alice Brown</h5>
+                      <p class="card-text">Frontend Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/alicebrown"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card member-card">
+                    <img
+                      src="https://via.placeholder.com/200"
+                      class="card-img-top"
+                      alt="Bob White"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Bob White</h5>
+                      <p class="card-text">Mobile App Developer</p>
+                      <div class="social-icons">
+                        <a
+                          href="https://github.com/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                        <a
+                          href="https://linkedin.com/in/bobwhite"
+                          target="_blank"
+                          class="social-icon"
+                          ><i class="fab fa-linkedin"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <!-- Carousel controls -->
+          <button
+            class="carousel-control-prev btn-crsl"
+            type="button"
+            data-bs-target="#memberCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next btn-crsl"
+            type="button"
+            data-bs-target="#memberCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentor Section -->
+<section id="mentor" class="py-5">
+  <div class="container text-center">
+    <h2>Our Mentor</h2>
+    <p>Meet our club's mentors who guide and support us on our journey.</p>
+    <div class="row justify-content-center">
+      <!-- Mentor Card 1 -->
+      <div class="col-md-3">
+        <div class="card member-card">
+          <img
+            src="mentor_image1.jpg"  
+            class="card-img-top"
+            alt="Mentor 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mentor Name 1</h5>
+            <p class="card-text">Club Mentor</p>
+          </div>
+        </div>
+      </div>
+      <!-- Mentor Card 2 -->
+      <div class="col-md-3">
+        <div class="card member-card">
+          <img
+            src="mentor_image2.jpg" 
+            class="card-img-top"
+            alt="Mentor 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mentor Name 2</h5>
+            <p class="card-text">Club Mentor</p>
+          </div>
+        </div>
+      </div>
+      <!-- Mentor Card 3 -->
+      <div class="col-md-3">
+        <div class="card member-card">
+          <img
+            src="mentor_image3.jpg"
+            class="card-img-top"
+            alt="Mentor 3" 
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mentor Name 3</h5>
+            <p class="card-text">Club Mentor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+     
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information or to join the club.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+      <div class="container text-center">
+        <div class="social-icons">
+          <a href="#" class="text-white mx-2"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://www.instagram.com/witcodeclub/?hl=en" class="text-white mx-2"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/witcodeclub/?viewAsMember=true" class="text-white mx-2"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 My Wit Code Club. All rights reserved.</p>
+        <div>
+          <a href="/privacy" class="text-white mx-2">Privacy</a> |
+          <a href="/terms" class="text-white mx-2">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Javascript for mission and vission  -->
+    <script>
+      function toggleMissionVision() {
+        var missionVision = document.getElementById("mission-vision");
+        var learnMoreBtn = document.querySelector(".learn-more-btn");
+    
+        if (missionVision.style.display === "none") {
+          missionVision.style.display = "block";
+          setTimeout(function() {
+            missionVision.style.opacity = 1;
+          }, 10); // Small delay to allow the display change to register
+    
+          // Hide the Learn More button once clicked
+          learnMoreBtn.style.display = "none"; 
+        }
+      }
+    </script>
+
+    <!-- Bootstrap JS, Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
